@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+	<meta charset="utf-8">
+	<title>cop26, l'esdeveniment</title>
+	<meta name="description" content="Dades de l'esdeveniment COP26 de Glasgow, resum i fitxa tècnica">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="page-home">
+
+	<header>
+		<nav class="container">
+			<span class="lema">NO HI HA PLANETA B</span>
+			<a class="link-logo" href="index.html"> 1,5ºC</a>
+			<ul class="menu-links">
+				<li><a href="simptomes.html">Símptomes del canvi climàtic</a></li>
+				<li><a href="videos.html">Vídeos</a></li>
+				<li><a id="active" href="cop26.html">COP26</a></li>
+			</ul>
+		</nav>
+	</header>
+
+  <main>
+	<div class="mainareacop26"> 
+		<h1>COP26, Glasgow 2021</h1>
+	
+		<div class="containerscop26">
+		
+		<div class="containerglasgowleft">
+			<h3>Dades de l'esdeveniment</h3>
+			<img src="img/COP26_Logo.png" alt="logo de cop26">
+			<div class="descript-list">
+				<dl>
+					<dt>Nom</dt>
+					<dd>Conferència de les Parts de la Convenció Marc de les Nacions Unides sobre el Canvi Climàtic <abbr> (CMNUCC)</abbr> i la Conferència de les Parts en qualitat de reunió de les Parts en el Protocol de Kyoto <abbr>(CMP)</abbr> </dd>
+					<dt>Dates de realització</dt>
+					<dd>31 d'octubre a 12 de novembre de 2021</dd>
+					<dt>Tema de l'esdeveniment</dt>
+					<dd>Escalfament global</dd>
+					<dt>Localització</dt>
+					<dd>Glasgow, Escòcia</dd>
+					<dt>Participants</dt>
+					<dd>40.000</dd>
+					<dt>Lloc web de la Conferència</dt>
+					<dd><a href="https://www.ukcop26.org/" alt="pàgian web de la cop26">https://www.ukcop25.org</a></dd>
+				</dl>
+			</div>
+		</div>
+
+		<div class="containerglasgowright">
+			<h3>Resultats de la Conferència</h3>
+			<p>El Pacte Climàtic de Glasgow és l'acord final de la Conferència de les Nacions Unides sobre el Canvi Climàtic de 2021. Després de centenars d'hores de negociació s'ha arribat als pactes següents:</p>
+			<ol>
+				<li>Revisió dels plans de reducció d'emissions el 2022 per intentar mantenir l'objectiu de l'Acord de París d'assolir que l’escalfament global estigui per sota d'1,5°C.</li>
+				<li>Reducció del 45% de les emissions de gasos d'efecte hivernacle per al 2030.</li>
+				<li>Reducció progressiva de l'ús del carbó.</li>
+				<li>Abans del 2025 els països desenvolupats es comprometen a doblar el finançament per a l'adaptació a la crisi climàtica dels països en desenvolupament.</li>
+			</ol>
+			<p>L'acord pretenia incloure l'<strong>eliminació gradual</strong> de l'ús del carbó; però en els moments finals de la negociació, els països dependents del carbó, especialment l'Índia, van pressionar perquè a l'acord final es parlés, no d'eliminació sinó de <strong>reducció gradual</strong>.</p>
+			<p>L'acord no ha satisfet completament a tothom. Els governs de la Unió Europea, Estats Units i Regne Unit valoren positivament els resultats de la conferència. Els grups ecologistes han criticat els acords que consideren insuficients.</p>
+		
+			<div class="quoteglasgow">
+					<blockquote>
+						<p>And it is my firm belief that the text that is on the table now reflects perfectly well this respect shown by the Presidency, and at the same time, allows us to act with the urgency that is essential for our survival.</p>
+						<cite>Frans Timmermans</cite>
+					</blockquote>
+					<blockquote>
+						<p>The COP26 is over. Here's a brief summary: Blah, blah, blah. But the real work continues outside these halls. And we will never give up, ever.
+						</p>
+						<cite>Greta Thunberg</cite>
+					</blockquote>
+			</div>
+		</div>	
+	</div>	
+
+ </main>
+
+	<div class="footer-area">
+		<div class="footer-container">
+			<div class="footer-menu">
+				<ul>
+					<li><a href="#">Sobre nosaltres</a></li>
+					<li><a href="#">Avís legal</a></li>
+					<li><a href="#">Política de privacitat</a></li>
+					<li><a href="#">Política de cookies</a></li>
+				</ul>
+			</div>
+			<div class="footer-social">
+			<ul>
+				<li><a href="twitter.com"><img src="img/twitter.svg"></a> </li>
+				<li><a href="twitter.com"><img src="img/instagram.svg"></a> </li>
+				<li><a href="youtube.com"><img src="img/youtube.svg"></a> </li>
+			</ul>
+			</div>	
+		<p>Activitat realitzada per Arnau Mach Rufí, per a l'assignatura HTML i CSS. Primer semestre del curs 2021-2022</p>
+		</div>
+
+	</div>
+
+</body>	
+
+</html>
