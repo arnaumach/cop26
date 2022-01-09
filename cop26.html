@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+	<meta charset="utf-8">
+	<title>cop26, l'esdeveniment</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600&display=swap');
+
+:root {
+  --text-color: black;
+  --text-color2: rgb(255,255,255);
+  --primary-color: rgb(189,55,0);
+  --background-color: rgb(244,244,244);
+  --background-form: rgb(242,232,228);
+}
+
+
+/* Reset de margins i paddings */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--background-color);
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: rgb(0,0,0);
+}
+
+.img{
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+/* capçalera */
+
+.container{
+  position: fixed ;
+  left:0;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: 10rem;
+  padding: 15px 0 0 300px;
+}
+
+
+.link-logo{
+  display: block;
+  font-weight: 800;
+  color: black;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+.menu-links li{
+  display: inline-block;
+  margin-right: 20px;  
+}
+
+.menu-links a{
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.menu-links li a:hover{
+  color: rgba(0,0,0,0,5);
+  text-decoration: none;
+}
+
+.container .menu-links li a#active {
+  color:var(--primary-color);
+  font-weight: 800;
+}
+
+.lema {
+  font-size:15px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* index.html */
+
+.hero{
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/bg-hero-home.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 220px 0 120px;
+  color: white;
+}
+
+.hero h3{
+  margin: 0 20% 0 20%;
+  justify-items: center;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.container2 h2 {
+  text-align: center;
+}
+
+.container2 p{
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.container2{
+  margin: 25px 20% 0 20%;
+
+}
+
+.noticies {
+  margin: 25px 20% 50px 20%;
+}
+
+.noticies h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.noticies .fila-noticies{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.noticies-item img{
+  width: 30vh;
+}
+
+.noticies-item{
+width: 30%;
+}
+
+.noticies-item span{
+  display: block;
+  padding-top: 10px;
+}
+
+.noticies-item a:nth-of-type(1){
+  display: block;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.noticies-item p{
+  margin-bottom: 20px;
+}
+
+.noticies-item a:nth-of-type(2) {
+  text-decoration: underline dotted;
+}
+
+.subscriu-container {
+  width: 100%;
+  background-color: var(--background-form);
+  padding-bottom: 30px;
+}
+
+.subscriu-container h2 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.subscriu-form {
+  max-width: 420px;
+  margin: 0  auto;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.subscriu-container input[type="text"], [type="email"] {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1em;
+  border-radius: 2px;
+  border-style: none;
+  border: 1px grey solid;
+}
+
+.subscriu-form p {
+  font-size: 10px;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+input[type="checkbox"] {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+.subscriu-form label {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+button[type="submit"] {
+  display: block;
+  padding:12px 20px 12px 20px;
+  max-width: 150px;
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  border-style: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+button[type="submit"]:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+fieldset {
+  border: none;
+}
+
+/* Símtomes */
+
+.containersimptomes {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cardwrapper:nth-child(even){
+  width: 600px;
+  background-color: white;
+  padding:10px;
+  margin-left: 400px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.cardwrapper:nth-child(odd) {
+  width: 600px;
+  background-color: rgb(255, 255, 255);
+  padding:10px; 
+}
+
+.card {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card img{
+  background-image: url('../img/symptom-01.jpg');
+}
+
+.card-part1 {
+  width: 50%;
+  margin-left: -2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-part2 {
+  max-width: 50%;
+  text-align: left;
+  margin-left: 2px; 
+}
+
+.card-part2 a {
+  text-decoration: underline dotted;
+}
+
+.card h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+
+#greenpeacelink{
+  text-decoration: none;
+}
+
+
+/* Video */
+
+.mainareavideo{
+  margin-top: 200px;
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.containervideo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.videowrapper{
+background-color: white;
+margin-bottom: 20px; 
+}
+
+.captionvideo{
+  background-color: white;
+  height: 40px;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 7px;
+  font-size: 13px;
+}
+
+.captionvideo i{
+  font-weight: 700;
+} 
+
+
+/* COP26 */
+
+.mainareacop26 {
+  margin-top: 200px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.containerscop26 {
+ display: flex;
+ gap: 120px;
+ text-align: start;
+}
+
+.containerglasgowleft{
+flex-grow: 2;
+margin-top: 20px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.containerglasgowleft .descript-list{
+  max-width: fit-content;
+}
+
+.descript-list dt{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+} 
+
+.descript-list dd{
+  padding-bottom: 10px;
+}
+
+.containerglasgowright{
+flex-grow: 5;
+margin-top: 20px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.containerglasgowright ol{
+  margin-left: 20px;
+}
+
+.containerglasgowright ol li{
+  margin-bottom: 15px;
+}
+
+.containerglasgowright p{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.quoteglasgow blockquote{
+   
+    width: 100%;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    padding: 3px 10px;
+    border-left: 4px solid var(--primary-color);
+    background-color: white;
+}
+
+blockquote p {
+    font-size: 1rem;   
+}
+
+blockquote cite {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* Peu de pàgina */
+
+.footer-area {
+  background-color: black;
+  height: 160px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;  
+}
+
+.footer-container {
+  max-width: calc(100% - 40%);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+
+.footer-menu ul {
+  display: flex;
+  padding: 30px;
+  padding-left: 0px;
+  align-items: center;
+  font-size: 13px;
+  list-style: none;
+}
+
+.footer-menu ul li {
+  padding-right: 20px;
+}
+
+.footer-menu ul li::before {
+  content: "•";
+  padding-right: 8px;
+  color: white;
+}
+
+.footer-menu ul li:nth-child(1)::before {
+  content: "•";
+  display: none;
+}
+
+.footer-menu a, img{
+  color: white
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-social li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 5px;
+  margin-top: -10px;
+}
+
+.footer-menu li a:hover {
+  color: var(--primary-color);
+}
+
+.footer-social a:hover {
+  opacity: 0.7;
+  filter: 1;
+}
+
+.footer-area p {
+  text-align: justify;
+  font-size: 14px;
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 760px) {
+  
+  
+  /* capçalera */
+
+  .container {
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    padding-top: 10px;
+    min-height: 180px;
+  }
+
+  .container .menu-links li{
+    display: block;
+    line-height: 1.3rem;
+    text-align: center;
+  }
+
+  /* index.html */
+
+  .hero h3 {
+    font-size: 40px;
+    margin: 20px;
+    margin-top: 60px;
+    font-family: "Raleway", sans-serif;    
+  }
+
+  .container2{
+    width: 100%;
+    margin-left: 0;  
+  }
+
+  .noticies {
+    width: 100%;
+    margin: 0;
+  } 
+
+  .noticies-item {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .noticies-item img{
+    width: 100%;
+  }
+
+   .subscriu-container{
+    height: 430px;
+  }
+
+  .footer-area {
+    height: 300px;
+  }
+ 
+  .footer-container { 
+    max-width: calc(100% - 20%);
+  }  
+  
+  .footer-menu ul{
+    display: block;
+    padding-left: 40px;
+  } 
+
+  .footer-menu ul li{
+    list-style: none;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .footer-menu ul li::before {
+    display: none;
+  }
+  
+  .footer-social ul{
+    display:block;
+    margin: 0 auto;
+  }
+
+  .footer-social ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 2.5px;
+  }
+  
+  .footer-container p{
+    text-align: center;
+    font-size: 17px;
+  }
+
+/* cop26 */
+
+
+.mainareacop26 {
+  width: 90%;
+}
+
+.containerscop26 {
+ flex-wrap: wrap;
+ gap: 10px;
+}
+
+/* video */
+
+.mainareavideo{
+  width: 95%;
+}
+
+.captionvideo{
+  padding-top: 7px;
+}
+
+
+
+/* simptomes */
+
+.cardwrapper:nth-child(even){
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  padding:10px;
+  margin-left: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.cardwrapper:nth-child(odd) {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  padding:10px;
+}
+
+.cardwrapper {
+  width: 100%;
+  height: fit-content;
+}
+
+.card {
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-part1 {
+  width: 100%;
+}
+
+.card-part2 {
+  max-width: 100%;
+}
+
+}
+/* Fi responsive*/
+
+	</style>
+	<meta name="description" content="Dades de l'esdeveniment COP26 de Glasgow, resum i fitxa tècnica">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="page-home">
+
+	<header>
+		<nav class="container">
+			<span class="lema">NO HI HA PLANETA B</span>
+			<a class="link-logo" href="index.html"> 1,5ºC</a>
+			<ul class="menu-links">
+				<li><a href="simptomes.html">Símptomes del canvi climàtic</a></li>
+				<li><a href="videos.html">Vídeos</a></li>
+				<li><a id="active" href="cop26.html">COP26</a></li>
+			</ul>
+		</nav>
+	</header>
+
+  <main>
+	<div class="mainareacop26"> 
+		<h1>COP26, Glasgow 2021</h1>
+	
+		<div class="containerscop26">
+		
+		<div class="containerglasgowleft">
+			<h3>Dades de l'esdeveniment</h3>
+			<img src="img/COP26_Logo.png" alt="logo de cop26">
+			<div class="descript-list">
+				<dl>
+					<dt>Nom</dt>
+					<dd>Conferència de les Parts de la Convenció Marc de les Nacions Unides sobre el Canvi Climàtic <abbr> (CMNUCC)</abbr> i la Conferència de les Parts en qualitat de reunió de les Parts en el Protocol de Kyoto <abbr>(CMP)</abbr> </dd>
+					<dt>Dates de realització</dt>
+					<dd>31 d'octubre a 12 de novembre de 2021</dd>
+					<dt>Tema de l'esdeveniment</dt>
+					<dd>Escalfament global</dd>
+					<dt>Localització</dt>
+					<dd>Glasgow, Escòcia</dd>
+					<dt>Participants</dt>
+					<dd>40.000</dd>
+					<dt>Lloc web de la Conferència</dt>
+					<dd><a href="https://www.ukcop26.org/" alt="pàgian web de la cop26">https://www.ukcop25.org</a></dd>
+				</dl>
+			</div>
+		</div>
+
+		<div class="containerglasgowright">
+			<h3>Resultats de la Conferència</h3>
+			<p>El Pacte Climàtic de Glasgow és l'acord final de la Conferència de les Nacions Unides sobre el Canvi Climàtic de 2021. Després de centenars d'hores de negociació s'ha arribat als pactes següents:</p>
+			<ol>
+				<li>Revisió dels plans de reducció d'emissions el 2022 per intentar mantenir l'objectiu de l'Acord de París d'assolir que l’escalfament global estigui per sota d'1,5°C.</li>
+				<li>Reducció del 45% de les emissions de gasos d'efecte hivernacle per al 2030.</li>
+				<li>Reducció progressiva de l'ús del carbó.</li>
+				<li>Abans del 2025 els països desenvolupats es comprometen a doblar el finançament per a l'adaptació a la crisi climàtica dels països en desenvolupament.</li>
+			</ol>
+			<p>L'acord pretenia incloure l'<strong>eliminació gradual</strong> de l'ús del carbó; però en els moments finals de la negociació, els països dependents del carbó, especialment l'Índia, van pressionar perquè a l'acord final es parlés, no d'eliminació sinó de <strong>reducció gradual</strong>.</p>
+			<p>L'acord no ha satisfet completament a tothom. Els governs de la Unió Europea, Estats Units i Regne Unit valoren positivament els resultats de la conferència. Els grups ecologistes han criticat els acords que consideren insuficients.</p>
+		
+			<div class="quoteglasgow">
+					<blockquote>
+						<p>And it is my firm belief that the text that is on the table now reflects perfectly well this respect shown by the Presidency, and at the same time, allows us to act with the urgency that is essential for our survival.</p>
+						<cite>Frans Timmermans</cite>
+					</blockquote>
+					<blockquote>
+						<p>The COP26 is over. Here's a brief summary: Blah, blah, blah. But the real work continues outside these halls. And we will never give up, ever.
+						</p>
+						<cite>Greta Thunberg</cite>
+					</blockquote>
+			</div>
+		</div>	
+	</div>	
+
+ </main>
+
+	<div class="footer-area">
+		<div class="footer-container">
+			<div class="footer-menu">
+				<ul>
+					<li><a href="#">Sobre nosaltres</a></li>
+					<li><a href="#">Avís legal</a></li>
+					<li><a href="#">Política de privacitat</a></li>
+					<li><a href="#">Política de cookies</a></li>
+				</ul>
+			</div>
+			<div class="footer-social">
+			<ul>
+				<li><a href="twitter.com"><img src="img/twitter.svg"></a> </li>
+				<li><a href="twitter.com"><img src="img/instagram.svg"></a> </li>
+				<li><a href="youtube.com"><img src="img/youtube.svg"></a> </li>
+			</ul>
+			</div>	
+		<p>Activitat realitzada per Arnau Mach Rufí, per a l'assignatura HTML i CSS. Primer semestre del curs 2021-2022</p>
+		</div>
+
+	</div>
+
+</body>	
+
+</html>
